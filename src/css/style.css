@@ -33,6 +33,7 @@ header {
     height: 150px;
     background: linear-gradient(45deg, #090909, #0D3E10);
     margin-bottom: 20px;
+    box-shadow: 0px 0px 10px black;
 }
 
 .logo {
@@ -52,30 +53,49 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: calc(100vh - 250px);
+    width: 55%;
+    height: calc(100vh - 200px);
+    /* background-color: #369457; */
 
 } 
 
 .character-selection {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
     /* max-width: 50%; */
     display: flex;
+
     max-height: calc(100vh - 250px);
 }
 
 .character-selection .characters-list img {
     object-fit: cover;
-    width: 120px;
-    height: 150px;
+    width: 132px;
+    height: 180px;
     border: 0;
     border-radius: 8px;
-    border-bottom: 2px solid #369457;
+    border-bottom: 2px solid #10bb00;
+    border-right: 2px solid #10bb00;
+    transition: 0.3s ease;
 
+}
+
+/* .character-selection .characters-list img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 10px #15ff00);
+} */
+
+.selected-from-list {
+    transition: 0.3s ease;
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 10px #15ff00);
 }
 
 .characters-list {
     /* margin-top: 15px; */
-    margin: 10px 0 0px 10px;
+    max-height: calc(100vh - 200px);
+    margin: 10px 0 0px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,8 +108,9 @@ header {
 }
 
 .selected-character {
+    margin-top: 20px;
     padding: 10px;
-    max-width: 50%;
+    max-width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,6 +122,15 @@ header {
     max-height: 300px;
     object-fit: cover;
     border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Fazer a imagem aumentar quando clicar (JS) */
+.selected-and-clicked {
+    transition: 0.3 ease;
+    transform: scale(1.3);
 }
 
 .character-selection .selected-character .character-info {
@@ -111,14 +141,20 @@ header {
     justify-content: center;
     max-width: 75%;
     text-align: justify;
+    font-weight: 300;
 }
 
 .title {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-family: 'Heart Breaking Bad', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
 }
 
 #character-name {
+    margin-top: 10px;
     font-family: 'Heart Breaking Bad', sans-serif;
     font-size: 40px;
     font-weight: 100;
+    text-transform: lowercase;
 }

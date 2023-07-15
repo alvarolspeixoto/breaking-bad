@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.cdnfonts.com/css/heart-breaking-bad" rel="stylesheet">
+    <link
+      href="https://fonts.cdnfonts.com/css/heart-breaking-bad"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
     <link rel="stylesheet" href="src/css/style.css" />
@@ -24,37 +27,43 @@
       <section class="characters">
         <h1 class="title">Selecione um personagem</h1>
         <ul class="characters-list">
-          <li class="character" id="walter">
-            <img
-              src="src/images/walter-white.jpg"
-              alt="Personagem Walter White"
-            />
+          <li
+            class="character"
+            id="walter"
+            data-name="Walter White"
+            data-description="Walter Hartwell White é um professor de química de ensino médio diagnosticado
+          com câncer no pulmão adenocarcinoma no estágio III, e passa a
+          produzir metanfetamina para garantir o futuro financeiro de sua
+          família. Com o progresso do seu negócio, Walter ganha uma reputação
+          notória utilizando o pseudônimo Heisenberg."
+          >
+            <img src="src/images/walter.png" alt="Personagem Walter White" />
           </li>
-          <li class="character" id="skyler">
-            <img src="src/images/skyler.jpg" alt="Personagem Skyler White" />
+          <li class="character" id="skyler" data-name="Skyler White">
+            <img src="src/images/skyler.png" alt="Personagem Skyler White" />
           </li>
-          <li class="character" id="walter-jr">
+          <li class="character" id="walter-jr" data-name="Walter Jr">
             <img src="src/images/walter-jr.png" alt="Personagem Walter Jr" />
           </li>
-          <li class="character" id="jesse">
+          <li class="character" id="jesse" data-name="Jesse Pinkman">
             <img src="src/images/jesse.png" alt="Personagem Jesse Pinkman" />
           </li>
-          <li class="character" id="jane">
+          <li class="character" id="jane" data-name="Jane Margolis">
             <img src="src/images/jane.png" alt="Personagem Jane Margolis" />
           </li>
-          <li class="character" id="hank">
+          <li class="character" id="hank" data-name="Hank Schrader">
             <img src="src/images/hank.png" alt="Personagem Hank Schrader" />
           </li>
-          <li class="character" id="marie">
+          <li class="character" id="marie" data-name="Marie Schrader">
             <img src="src/images/marie.png" alt="Personagem Marie Schrader" />
           </li>
-          <li class="character" id="gus">
+          <li class="character" id="gus" data-name="Gustavo Fring">
             <img src="src/images/gus.png" alt="Personagem Gustavo Fring" />
           </li>
-          <li class="character" id="mike">
-            <img src="src/images/mike.jpg" alt="Personagem Mike Ehrmantraut" />
+          <li class="character" id="mike" data-name="Mike Ehrmantraut">
+            <img src="src/images/mike.png" alt="Personagem Mike Ehrmantraut" />
           </li>
-          <li class="character" id="saul">
+          <li class="character" id="saul-goodman" data-name="Saul Goodman">
             <img
               src="src/images/saul-goodman.png"
               alt="Personagem Saul Goodman"
@@ -67,19 +76,20 @@
         <div class="character-info">
           <img
             class="big-sized-character"
-            src="./src/images/walter-white.jpg"
+            src="./src/images/walter.png"
             alt="Personagem Selecionado"
           />
           <h2 class="character-name" id="character-name">Walter White</h2>
           <p class="character-description" id="character-description">
-            Walter White é um professor de química de ensino médio diagnosticado
-            com câncer no pulmão adenocarcinoma no estágio III, e passa a
-            produzir metanfetamina para garantir o futuro financeiro de sua
-            família. Com o progresso do seu negócio, Walter ganha uma reputação
-            notória utilizando o pseudônimo Heisenberg.
+            Walter Hartwell White é um professor de química de ensino médio
+            diagnosticado com câncer no pulmão adenocarcinoma no estágio III, e
+            passa a produzir metanfetamina para garantir o futuro financeiro de
+            sua família. Com o progresso do seu negócio, Walter ganha uma
+            reputação notória utilizando o pseudônimo Heisenberg.
           </p>
         </div>
       </section>
     </main>
+    <script src="/src/js/script.js"></script>
   </body>
 </html>

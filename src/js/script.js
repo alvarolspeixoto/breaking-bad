@@ -1,3 +1,4 @@
+// Changes image size when clicked
 const selectedCharacterImg = document.querySelector('.big-sized-character')
 selectedCharacterImg.addEventListener('click', () => {
 
@@ -17,7 +18,7 @@ const characterList = document.querySelectorAll('.character')
 characterList.forEach((character) => {
     character.addEventListener('mouseenter', () => {
 
-        // Show that this person has been selected
+        // Shows that this character has been selected
         const previouslySelected = document.querySelector('.selected-from-list')
 
         if(previouslySelected) {

@@ -13,8 +13,6 @@ body {
 
 body::before {
     content: "";
-    /* background-color: black; */
-    /* background-image: linear-gradient(0deg, #1F6032, #032202); */
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,16 +28,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 120px;
     background: linear-gradient(45deg, #090909, #0D3E10);
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px black;
 }
 
 .logo {
-    height: 100px;
+    height: 70px;
     filter: drop-shadow(1px 1px 3px #ffffff);
-    /* filter: drop-shadow(1px 1px 10px #00c42a); */
     transition: 0.2s ease;
     
 }
@@ -54,19 +51,15 @@ header {
     align-items: center;
     justify-content: center;
     width: 55%;
-    height: calc(100vh - 200px);
-    /* background-color: #369457; */
+    height: calc(100vh - 150px);
 
 } 
 
 .character-selection {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
-    /* max-width: 50%; */
     display: flex;
-
-    max-height: calc(100vh - 250px);
+    max-height: calc(100vh - 120px);
 }
 
 .character-selection .characters-list img {
@@ -80,12 +73,6 @@ header {
     transition: 0.3s ease;
 
 }
-
-/* .character-selection .characters-list img:hover {
-    transform: scale(1.2);
-    filter: drop-shadow(0px 0px 10px #15ff00);
-} */
-
 .selected-from-list {
     transition: 0.3s ease;
     transform: scale(1.2);
@@ -93,8 +80,6 @@ header {
 }
 
 .characters-list {
-    /* margin-top: 15px; */
-    max-height: calc(100vh - 200px);
     margin: 10px 0 0px 20px;
     display: flex;
     align-items: center;
@@ -110,16 +95,16 @@ header {
 .selected-character {
     margin-top: 20px;
     padding: 10px;
-    max-width: 45%;
-    display: flex;
-    align-items: center;
+    width: 45%;
+    display: flex;  
     justify-content: center;
+    max-height: calc(100vh - 200px);
 }
 
-.selected-character img {
+.big-sized-character {
     border-radius: 10px;
-    max-width: 200px;
-    max-height: 300px;
+    width: 200px;
+    height: 280px;
     object-fit: cover;
     border-bottom: 3px solid white;
     border-right: 3px solid white;
@@ -127,7 +112,6 @@ header {
     cursor: pointer;
 }
 
-/* Fazer a imagem aumentar quando clicar (JS) */
 .selected-and-clicked {
     transition: 0.3 ease;
     transform: scale(1.3);
@@ -139,13 +123,13 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 75%;
+    max-width: 85%;
     text-align: justify;
     font-weight: 300;
+    font-size: 11pt;
 }
 
 .title {
-    /* text-transform: uppercase; */
     font-family: 'Heart Breaking Bad', sans-serif;
     font-weight: 100;
     font-size: 50px;
@@ -157,4 +141,11 @@ header {
     font-size: 40px;
     font-weight: 100;
     text-transform: lowercase;
+}
+
+.selected-character .character-info .default-img {
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 0px 5px black);
+    object-fit: cover;
 }

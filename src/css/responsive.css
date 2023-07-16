@@ -1,0 +1,116 @@
+@media (max-width: 1345px) {
+
+    .character-selection .characters .characters-list img {
+        width: 100px;     
+    }
+
+    .character-selection .characters .title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1057px) {
+
+    .character-selection .characters .characters-list img {
+        width: 90px;     
+    }
+
+    .character-selection .selected-character img {
+        width: 150px;
+    }
+
+    .character-selection .characters .title {
+        font-size: 35px;
+    }
+
+    .character-selection .selected-character .character-info .default-image {
+        transform: scale(0.1);
+    }
+}
+
+@media (max-width: 960px) {
+
+    .character-selection .characters .characters-list img {
+        width: 80px;     
+    }
+
+    .character-selection .selected-character img {
+        width: 130px;
+    }
+
+    .character-selection .selected-character .character-info #default-img {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 780px) {
+
+    .character-selection .characters .characters-list img {
+        width: 55px;     
+        height: 110px;
+    }
+
+    .character-selection .selected-character img {
+        width: 100px;
+    }
+
+    .character-selection .selected-character .character-info #character-name {
+        font-size: 20pt;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .character-selection .characters {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .character-selection {
+        flex-direction: column-reverse;
+        gap: 0;
+        justify-content: center;
+    }
+
+    .character-selection .characters .characters-list img {
+        width: 58px;
+        height: 100px;     
+    }
+
+    .character-selection .selected-character {
+        width: 100%;
+    }
+
+    .character-selection .characters {
+        width: 97%;
+    }
+
+    .character-selection .selected-character img {
+        width: 180px;
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+    body header .logo {
+        transform: scale(0.5);
+    }
+
+    body header {
+        height: 50px;
+    }
+
+    .character-selection .selected-character .character-info #character-name {
+        margin-top: 0;
+    }
+
+    .character-selection .selected-character .character-info {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .character-selection .selected-character {
+        padding: 0;
+        height: calc(100vh - 400px);
+    }
+
+}

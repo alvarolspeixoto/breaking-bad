@@ -110,7 +110,32 @@
 
     .character-selection .selected-character {
         padding: 0;
-        height: calc(100vh - 400px);
+        height: calc(100vh - 350px);
+    }
+
+}
+
+@media (max-width: 375px) {
+    .character-selection .characters .characters-list img {
+        width: 63px; 
+        height: 80px;
+    }
+
+    .character-selection .characters .characters-list {
+        padding: 5px 0 0 0;
+        gap: 5px;
+    }
+
+    .character-selection .selected-character .character-info .character-description {
+        font-size: 8pt;
+    }
+
+    .character-selection .selected-character .character-info #character-name {
+        margin-top: -40px;
+    }
+
+    .character-selection .selected-character {
+        margin-bottom: 30px;
     }
 
 }
